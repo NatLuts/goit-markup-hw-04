@@ -1,0 +1,307 @@
+body {
+background-color: #FFF;
+color: #434455;
+font-family: 'Roboto', sans-serif;
+}
+
+a {
+text-decoration: none;
+}
+
+ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+}
+
+.container {
+max-width: 1158px;
+margin: 0 auto;
+padding: 0 15px 0 15px;
+}
+
+.section {
+padding: 120px 0;
+}
+
+img {
+display: block;
+max-width: 100%;
+}
+/*Header*/
+
+.page-header {
+border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.nav-header {
+display: flex;
+align-items: center;
+}
+
+.menu {
+display: flex;
+gap: 40px;
+}
+
+.logo {
+font-family: 'Raleway', sans-serif;
+font-size: 18px;
+font-weight: 700;
+line-height: 1.17; 
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4D5AE5;
+display: inline-block;
+margin-right: 76px;
+}
+
+.logo-text {
+color: var(--NAVY-BLUE, #2E2F42)
+}
+
+.contact-menu-link {
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+font-style: normal;
+color: #434455;
+}
+    
+.contact-menu-link:hover,
+.contact-menu-link:focus {
+color: #404bbf;
+}
+    
+.contacts {
+font-style: normal;
+margin-left: auto;
+}
+
+.menu-link {
+display: block;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+color: #2E2F42;
+padding: 24px 0;
+}
+    
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:active {
+color: #404bbf ;
+}
+    
+.contact-menu {
+display: flex;
+gap: 40px;
+}
+    
+
+/*Section first*/
+
+.section-first {
+background: var(--NAVY-BLUE, #2E2F42);  
+padding: 188px 0;
+}
+
+.main-title {
+font-size: 56px;
+font-weight: 700;
+line-height: 1.07; 
+letter-spacing: 0.02em;
+text-align: center;
+color: #FFF;
+max-width: 496px;
+margin: 0 auto;
+margin-bottom: 48px;
+}
+
+.button {
+background: var(--IRIS, #4D5AE5);
+color: #FFF;
+cursor: pointer;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+min-width: 169px;
+height: 56px;
+border-radius: 4px;
+border: none;
+display: block;
+align-items: center;
+margin: 0 auto;
+}
+
+.button:hover, .button:focus { 
+ background-color: #404BBF;
+}
+
+/*Section Second -Features*/
+
+.section-second {
+padding: 120px 0;
+}
+
+.features {
+display: flex;
+gap: 24px;
+}
+
+.title {
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2; 
+letter-spacing: 0.05em;
+color: #2E2F42;
+margin-bottom: 8px;
+}
+
+.title-text {
+font-family: Roboto;
+font-size: 16px;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+font-weight: 400;
+font-style: normal;
+color: #434455;
+background: var(--WHITE, #FFF);
+}
+
+.section-title {
+font-size: 36px;
+font-weight: 700;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+color: #2e2f42;
+}
+
+.feature-class {
+width: calc((100% - 72px)/4);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+/*Section third -Our Team*/
+
+.section-third {
+background-color: var(--CLOUD, #F4F4FD);
+}
+
+.team-title {
+margin-bottom: 72px;
+}
+
+.name-title {
+width: 232px;
+text-align: center;
+margin-bottom: 8px;
+}
+    
+.team-list {
+background-color: #FFF;
+border-radius: 0px 0px 4px 4px; 
+}
+
+.team-member {
+padding: 32px 0;
+}
+
+.team {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+}
+
+.team-text {
+text-align: center;
+}
+
+/*Our Portfolio*/
+
+.port-title {
+margin-bottom: 72px;
+}
+
+.portfolio-list {
+display: flex;
+gap: 24px;
+flex-wrap: wrap;
+row-gap: 48px;
+}
+
+/*.portfolio-item {
+    display: flex;
+    width: 360px;
+    flex-direction: column;
+    padding-bottom: 32px;
+    flex-shrink: 0;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    }
+
+    .project-text {
+    padding-left: 16px;
+    }*/
+
+    .addit-box {
+     padding: 32px 16px;
+     border: 1px solid #e7e9fc;
+     border-top: none;
+    }
+
+/*Footer*/
+
+.footer-logo-text {
+color: #F4F4FD; 
+
+}
+.footer {
+background: var(--NAVY-BLUE, #2E2F42);
+padding: 100px 0 100px;
+}
+
+.footer-text {
+color: var(--CLOUD, #f4f4fd);
+font-size: 16px;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+font-weight: 400;
+width: 264px;
+}
+
+.footer-logo {
+margin-bottom: 16px; 
+}
