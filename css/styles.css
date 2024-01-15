@@ -42,13 +42,13 @@ max-width: 100%;
 
 .page-header {
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
 display: flex;
 flex-direction: row;
 align-items: center;
-box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .nav-header {
@@ -83,8 +83,10 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 font-style: normal;
 color: #434455;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
     
 .contact-menu-link:hover,
 .contact-menu-link:focus {
@@ -107,10 +109,6 @@ padding: 24px 0;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link {
-    position: relative;  
-}
-
     
 .menu-link:hover,
 .menu-link:focus,
@@ -124,21 +122,23 @@ display: flex;
 gap: 40px;
 }
 
-.current::after {
+.active-link {
+color: #404bbf;
+position: relative;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active-link::after {
 content: "";
 width: 100%;
 height: 4px;
 position: absolute;
-bottom: 0;
+bottom: -1px;
 left: 0;
 background-color: #404BBF;
 border-radius: 2px;
 }
 
-.current {
-position: relative;
-color: #404BBF;
-}
     
 
 /*Section first*/
@@ -283,7 +283,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 .team-member {
-padding: 32px 0 0 0;
+padding: 32px 0;
 }
 
 .team {
@@ -301,8 +301,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 24px;
-margin-bottom: 32px;
-
 }
 
 .section-icon-item {
